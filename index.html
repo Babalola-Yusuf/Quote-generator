@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <main>
+     <section class="words">
+         <header>
+         <p>
+          ADVICE # <span id="ID"></span>
+       </p>
+     </header>
+       
+
+   <div class="quote-container">
+       <p>“<span id="quote">Everyone has their down days. Don't take it out on innocent bystanders.</span>”</p>
+   </div>
+     </section>
+   <img src="pattern-divider-desktop.svg" alt="" id="pattern-div">
+   <img src="pattern-divider-mobile.svg" alt="" id="pattern-div-mobile">
+   <button id="button" onclick="getQuotes()"> 
+       <img src="icon-dice.svg" alt="dice" id="dice">
+   </button>
+   
+  
+ </main>
+  
+ <footer>
+      <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Babalola Yusuf</a>.
+  </div>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>

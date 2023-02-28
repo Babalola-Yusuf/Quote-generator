@@ -1,0 +1,113 @@
+body {
+margin: 0;
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+background-color: hsl(218, 23%, 16%);
+font-family: 'Manrope', sans-serif;
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    width: 40%;
+    height: 35%;
+    min-width: 300px;
+    background-color: hsl(217, 19%, 24%);
+    color: hsl(193, 38%, 86%);
+    border-radius: 0.5rem;
+    font-weight: 800;
+    padding-top: 0;
+    padding: 0.5rem;
+    margin-top: 25%;
+}
+.words{
+    position: absolute;
+    top: 0;
+}
+header{
+    height: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+header p{
+    color: hsl(150, 100%, 66%);
+    padding: 0;
+}
+
+#pattern-div{
+    z-index: 1;
+   left: 0;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;   
+    
+}
+#pattern-div-mobile{
+        position: absolute;
+        visibility: hidden;
+        bottom: 60px;
+        left: 1.3rem;
+    }
+
+@media(max-width:375px){
+    #pattern-div{
+        visibility: hidden;
+    }
+    #pattern-div-mobile{
+        visibility: visible;
+    }
+    
+    main{
+        width: 90%;
+        height: 60%;
+    }
+}
+ button {
+    position: absolute;
+    bottom: -30px;
+    left: 41%;
+    border-radius: 40px;
+    height: 60px;
+    width: 60px;
+    background-color: hsl(150, 100%, 66%);
+    border-color: hsl(150, 100%, 66%);
+    border-style: none;
+}
+button:hover{
+    box-shadow: 1px 1px 10px 10px hsl(150, 100%, 30%);
+    border-style: solid;
+}
+@media(min-width:1023px){
+    button{
+        left: 43%;
+    }
+}
+.quote-container{
+    height: 60%;
+    width: 100% ;
+    font-size: 28px;
+   
+}
+.quote-container p{
+    margin-top: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    
+}
+ .attribution { 
+ font-size: 11px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+   }
+    .attribution a { color:hsl(193, 38%, 86%) ; }
